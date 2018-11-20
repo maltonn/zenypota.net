@@ -1,1 +1,361 @@
-<p>Preparing for release...</p>
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <meta name="description" content="暗号通貨で商品を売り買いしたりイラストや写真を投稿できたりするサービスを作っています。現在開発中です。お楽しみに!">
+    <title>ゼニポタ</title>
+
+
+    <!-- Font icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons&style=outlined" rel="stylesheet">
+
+    <!-- Web Font 大事だから消さないで -->
+    <link href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" rel="stylesheet" />
+
+    <!-- Main CSS -->
+    <link rel="preload" href="min/plugin-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="min/plugin-min.css">
+    </noscript>
+
+    <link rel="preload" href="min/custom-min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="min/custom-min.css">
+    </noscript>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="css/style.css">
+    </noscript>
+
+    <link rel="preload" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+    </noscript>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://zenypota.net/favicon.ico" />
+
+</head>
+
+<body id="top" class="scrollspy" style="font-family: 'Noto Sans Japanese';">
+    <div id="out">
+        <div id="loading">
+            <div id="block1" class="block"></div>
+            <div id="block2" class="block"></div>
+            <div id="block3" class="block"></div>
+            <div id="block4" class="block"></div>
+        </div>
+    </div>
+    <!-- Pre Loader -->
+
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+
+    </div>
+
+    <!--Navigation-->
+    <div class="navbar-fixed">
+        <nav id="nav_f" class="black" role="navigation">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <a href="#" id="logo-container" class="brand-logo">
+                        <img src="img/zenypota.svg" style="height: 1.5em; margin-top: 0.25em;">
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="#service">サービス概要</a>
+                        </li>
+                        <li>
+                            <a href="#team">開発メンバー</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--Hero-->
+    <div class="section no-pad-bot" id="index-banner" style="height:100%">
+        <div class="container">
+            <h1 class="text_h center header cd-headline letters type">
+                <span class="cd-words-wrapper waiting">
+                    <b class="is-visible">ゼーニポタッ！</b>
+                    <b>商品を売買する？</b>
+                    <b>イラストを投稿する？</b>
+                </span>
+            </h1>
+        </div>
+    </div>
+
+    <!--Intro and service-->
+    <div id="service" class="section scrollspy" style="padding: 3% 10% 3% 10%;">
+        <div class="container">
+            <div class="row">
+                <div class="col s12">
+                    <h3 class="center header text_h2">
+                        暗号通貨の
+                        <span class="span_h2"> ワクワク </span>
+                        をとどけるチームです
+                    </h3>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card grey darken-4 z-depth-5">
+                      <div class="card-content white-text">
+                        <i class="material-icons" style="font-size:5em;">account_balance_wallet</i>
+                        <p class="deep-purple-text text-lighten-1" style="font-size:1.5em;"><b><a href="https://monya-wallet.github.io/">もにゃ</a></b></p>
+                        <p>BitZenyの他様々な通貨を安全に管理することができるウォレットです。<br />
+                        ゼニポタではもにゃを基軸としたサービスを開発していきます</p>
+                      </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card grey darken-4 z-depth-5">
+                    
+                      <div class="card-content white-text">
+                            <i class="material-icons" style="font-size:5em;">shopping_cart</i>
+                            <p class="deep-purple-text text-lighten-1" style="font-size:1.5em;"><b>ゼニマ</b></p>
+                        <p>売り手、買い手そして運営までもが安心して取引・運営ができるシステムを採用し安全に暗号通貨での取引をサポートします。</p><br />
+                      </div>
+                    </div>
+                </div>
+                <div class="col s12 m4">
+                    <div class="card grey darken-4 z-depth-5">
+                      <div class="card-content white-text">
+                            <i class="material-icons" style="font-size:5em;">image</i>
+                        <p class="deep-purple-text text-lighten-1" style="font-size:1.5em;"><b>ゼニピク</b></p>
+                        <p>イラストや写真を自由にアップロードして暗号通貨がもらえるサービスです<br />
+                        さくっとエゴサ、さくっと投げ銭をモットーに快適なおかず探しをサポートします。</p>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Team-->
+    <div class="section scrollspy white" id="team" style="padding: 3% 0 3% 0;">
+        <div class="container">
+            <h2 class="header text_b center-align">開発メンバー</h2>
+            <div class="row">
+                <div class="col s12 m3">
+                    <div class="card card-avatar z-depth-5">
+                        <div class="waves-effect waves-block waves-light">
+                            <picture>
+                                <img class="activator" src="img/team-1.jpg" style="margin-top: 2em">
+                            </picture>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">ふじしゃん
+                                <br/>
+                                <small>
+                                    <em>
+                                        <p class="red-text text-darken-1">Backend Programmer</p>
+                                    </em>
+                                </small>
+                            </span>
+                            <p>
+                                <a href="https://twitter.com/Fujiwaraizuho" target="_blank">Twitter</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card card-avatar z-depth-5">
+                        <div class="waves-effect waves-block waves-light">
+                            <picture>
+                                <img class="activator" src="img/team-2.jpg" style="margin-top: 2em">
+                            </picture>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">音咲ありす
+                                <br/>
+                                <small>
+                                    <em>
+                                        <p class="red-text text-darken-1" href="#">Web Designer</p>
+                                    </em>
+                                </small>
+                            </span>
+                            <p>
+                                <a href="https://twitter.com/MaipleLab" target="_blank">Twitter</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card card-avatar z-depth-5">
+                        <div class="waves-effect waves-block waves-light">
+                            <picture>
+                                <img class="activator" src="img/team-5.jpg" style="margin-top: 2em">
+                            </picture>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">Moscwa
+                                <br/>
+                                <small>
+                                    <em>
+                                        <p class="red-text text-darken-1" href="#">Web Designer</p>
+                                    </em>
+                                </small>
+                            </span>
+                            <p>
+                                <a href="https://twitter.com/moscwa_" target="_blank">Twitter</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col s12 m3">
+                    <div class="card card-avatar z-depth-5">
+                        <div class="waves-effect waves-block waves-light">
+                            <picture>
+                                <img class="activator" src="img/team-7.jpg" style="margin-top: 2em">
+                            </picture>
+                        </div>
+                        <div class="card-content">
+                            <span class="card-title activator grey-text text-darken-4">kamata4649
+                                <br/>
+                                <small>
+                                    <em>
+                                        <p class="red-text text-darken-1" href="#">Backend Programmer</p>
+                                    </em>
+                                </small>
+                            </span>
+                            <p>
+                                <a href="https://twitter.com/RyuProgramer" target="_blank">Twitter</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer id="contact" class="page-footer scrollspy black">
+        <div class="footer-copyright" style="background:black;">
+            <div class="container">
+                © 2018 ゼニポタ. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!-- <script src="min/plugin-min.js"></script> -->
+    <script src="min/custom-min.js" async></script>
+
+    <script>
+        window.onload = function () {
+            var loading = document.getElementById("out")
+            window.setTimeout(function () {
+                loading.style.opacity = 0
+                window.setTimeout(function () {
+                    loading.style.display = "none"
+                }, 1500)
+            }, 1500)
+
+        }
+    </script>
+
+    <script>
+        $(function () {
+            $('#cat').hover(function () {
+                $(this).text('Blockchain Engineer');
+            }, function () {
+                $(this).text('Cat');
+            });
+        });
+    </script>
+
+    <script>
+        /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+        (function (a) {
+            if (!a.loadCSS) {
+                a.loadCSS = function () { }
+            }
+            var b = loadCSS.relpreload = {};
+            b.support = (function () {
+                var d;
+                try {
+                    d = a.document.createElement("link").relList.supports("preload")
+                } catch (f) {
+                    d = false
+                }
+                return function () {
+                    return d
+                }
+            })();
+            b.bindMediaToggle = function (e) {
+                var f = e.media || "all";
+
+                function d() {
+                    e.media = f
+                }
+                if (e.addEventListener) {
+                    e.addEventListener("load", d)
+                } else {
+                    if (e.attachEvent) {
+                        e.attachEvent("onload", d)
+                    }
+                }
+                setTimeout(function () {
+                    e.rel = "stylesheet";
+                    e.media = "only x"
+                });
+                setTimeout(d, 3000)
+            };
+            b.poly = function () {
+                if (b.support()) {
+                    return
+                }
+                var d = a.document.getElementsByTagName("link");
+                for (var e = 0; e < d.length; e++) {
+                    var f = d[e];
+                    if (f.rel === "preload" && f.getAttribute("as") === "style" && !f.getAttribute(
+                        "data-loadcss")) {
+                        f.setAttribute("data-loadcss", true);
+                        b.bindMediaToggle(f)
+                    }
+                }
+            };
+            if (!b.support()) {
+                b.poly();
+                var c = a.setInterval(b.poly, 500);
+                if (a.addEventListener) {
+                    a.addEventListener("load", function () {
+                        b.poly();
+                        a.clearInterval(c)
+                    })
+                } else {
+                    if (a.attachEvent) {
+                        a.attachEvent("onload", function () {
+                            b.poly();
+                            a.clearInterval(c)
+                        })
+                    }
+                }
+            }
+            if (typeof exports !== "undefined") {
+                exports.loadCSS = loadCSS
+            } else {
+                a.loadCSS = loadCSS
+            }
+        }(typeof global !== "undefined" ? global : this));
+    </script>
+
+</body>
+
+</html>
