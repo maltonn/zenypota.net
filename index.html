@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
-    <meta name="description" content="暗号通貨で商品を売り買いしたりイラストや写真を投稿できたりするサービスを作っています。現在開発中です。お楽しみに!">
+    <meta name="description" content="BitZenyPlusで買い物や投げ銭などができるポータルサイトです。現在開発中です。お楽しみに!">
+    <meta name="keywords" content="BitZeny,BitZenyPlus,Portal,Wallet,ゼニー,仮想通貨,ビットゼニー,ポータル,ウォレット,オンラインウォレット">
     <title>ゼニポタ</title>
+    <link rel="stylesheet" href="css/loading.css" > 
 
 
     <!-- Font icon -->
@@ -32,26 +34,36 @@
     <noscript>
         <link rel="stylesheet" href="css/style.css">
     </noscript>
-
-    <link rel="preload" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+        <link rel="stylesheet" href="css/loading.css">
     </noscript>
 
+    <link rel="preload" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/earlyaccess/notosansjapanese.css">
+    </noscript>
+	
     <!-- Favicon -->
     <link rel="shortcut icon" href="https://zenypota.net/favicon.ico" />
 
 </head>
 
 <body id="top" class="scrollspy" style="font-family: 'Noto Sans Japanese';">
-    <div id="out">
-        <div id="loading">
-            <div id="block1" class="block"></div>
-            <div id="block2" class="block"></div>
-            <div id="block3" class="block"></div>
-            <div id="block4" class="block"></div>
-        </div>
+  <div id="loader">
+    <div id="box1">
+      <div></div>
     </div>
+    <div id="box2">
+      <div></div>
+    </div>
+    <div id="box3">
+      <div></div>
+    </div>
+    <div id="box4">
+      <div></div>
+    </div>
+  </div>
+
     <!-- Pre Loader -->
 
     <div id="loader-wrapper">
@@ -75,7 +87,10 @@
                             <a href="#service">サービス概要</a>
                         </li>
                         <li>
-                            <a href="#team">開発メンバー</a>
+                            <a href="#team">運営チーム</a>
+                        </li>
+                        <li>
+                            <a href="#contact">お問い合わせ</a>
                         </li>
                     </ul>
                 </div>
@@ -88,9 +103,11 @@
         <div class="container">
             <h1 class="text_h center header cd-headline letters type">
                 <span class="cd-words-wrapper waiting">
-                    <b class="is-visible">ゼーニポタッ！</b>
-                    <b>商品を売買する？</b>
-                    <b>イラストを投稿する？</b>
+                    <b class="is-visible">ゼニポタ</b>
+                    <b>BitZenyPlusを貯める</b>
+                    <b>商品を出品する</b>
+                    <b>イラストを投稿する</b>
+                    <b>ブログを執筆する</b>
                 </span>
             </h1>
         </div>
@@ -102,18 +119,16 @@
             <div class="row">
                 <div class="col s12">
                     <h3 class="center header text_h2">
-                        暗号通貨の
-                        <span class="span_h2"> ワクワク </span>
-                        をとどけるチームです
+                        ゼニポタは暗号通貨の
+                        <span class="span_h2"> 革新的 </span>なサービスです
                     </h3>
                 </div>
                 <div class="col s12 m4">
                     <div class="card grey darken-4 z-depth-5">
                       <div class="card-content white-text">
                         <i class="material-icons" style="font-size:5em;">account_balance_wallet</i>
-                        <p class="deep-purple-text text-lighten-1" style="font-size:1.5em;"><b><a href="https://monya-wallet.github.io/">もにゃ</a></b></p>
-                        <p>BitZenyの他様々な通貨を安全に管理することができるウォレットです。<br />
-                        ゼニポタではもにゃを基軸としたサービスを開発していきます</p>
+                        <p class="deep-purple-text text-lighten-1" style="font-size:1.5em;"><b>もにゃ</b></p>
+                        <p>オンラインウォレットを使用して、決済や投げ銭などに利用できます。攻撃対策はばっちりです。</p>
                       </div>
                     </div>
                 </div>
@@ -122,8 +137,8 @@
                     
                       <div class="card-content white-text">
                             <i class="material-icons" style="font-size:5em;">shopping_cart</i>
-                            <p class="deep-purple-text text-lighten-1" style="font-size:1.5em;"><b>ゼニマ</b></p>
-                        <p>売り手、買い手そして運営までもが安心して取引・運営ができるシステムを採用し安全に暗号通貨での取引をサポートします。</p><br />
+                            <p class="deep-purple-text text-lighten-1" style="font-size:1.5em;"><b>マーケット</b></p>
+                        <p>ゼニポタのオンラインウォレットを使って商品を売ったり、買ったりすることができます。</p>
                       </div>
                     </div>
                 </div>
@@ -131,9 +146,8 @@
                     <div class="card grey darken-4 z-depth-5">
                       <div class="card-content white-text">
                             <i class="material-icons" style="font-size:5em;">image</i>
-                        <p class="deep-purple-text text-lighten-1" style="font-size:1.5em;"><b>ゼニピク</b></p>
-                        <p>イラストや写真を自由にアップロードして暗号通貨がもらえるサービスです<br />
-                        さくっとエゴサ、さくっと投げ銭をモットーに快適なおかず探しをサポートします。</p>
+                        <p class="deep-purple-text text-lighten-1" style="font-size:1.5em;"><b>イラスト</b></p>
+                        <p>イラストや画像を投稿してシェアできます。また、見た人から投げ銭を受け取ることができます。</p>
                       </div>
                     </div>
                 </div>
@@ -157,7 +171,7 @@
                                 <br/>
                                 <small>
                                     <em>
-                                        <p class="red-text text-darken-1">Backend Programmer</p>
+                                        <p class="red-text text-darken-1">Project Leader</p>
                                     </em>
                                 </small>
                             </span>
@@ -219,11 +233,11 @@
                             </picture>
                         </div>
                         <div class="card-content">
-                            <span class="card-title activator grey-text text-darken-4">kamata4649
+                            <span class="card-title activator grey-text text-darken-4">りゅう
                                 <br/>
                                 <small>
                                     <em>
-                                        <p class="red-text text-darken-1" href="#">Backend Programmer</p>
+                                        <p class="red-text text-darken-1" href="#">Web Designer</p>
                                     </em>
                                 </small>
                             </span>
@@ -247,24 +261,25 @@
     </footer>
 
 
+
     <!--  Scripts-->
-    <script>
-        $(".button-collapse").sideNav();
-    </script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
+
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <!-- <script src="min/plugin-min.js"></script> -->
     <script src="min/custom-min.js" async></script>
-
+    <script>
+        $(".button-collapse").sideNav();
+    </script>
     <script>
         window.onload = function () {
-            var loading = document.getElementById("out")
-            window.setTimeout(function () {
-                loading.style.opacity = 0
-                window.setTimeout(function () {
+            var loading = document.getElementById("loader")
+            setTimeout(function () {
                     loading.style.display = "none"
-                }, 1500)
+                    document.body.style.overflowY="auto"
+
             }, 1500)
 
         }
